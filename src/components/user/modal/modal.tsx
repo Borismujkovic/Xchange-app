@@ -3,6 +3,9 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import { Col, Row } from 'antd';
+import { Controller, FormProvider, useForm } from 'react-hook-form';
+import { SignUpFormValues } from '../../auth/SignUpForm/SignUpForm.types';
 
 const style = {
     position: 'absolute',
@@ -21,7 +24,9 @@ export default function BasicModal() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    const methods = useForm<SignUpFormValues>();
     return (
+        <>
         <div>
             <Button onClick={handleOpen}>Open modal</Button>
             <Modal
@@ -34,11 +39,30 @@ export default function BasicModal() {
                     <Typography id="modal-modal-title" variant="h6" component="h2">
                         Text in a modal
                     </Typography>
-                    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-                    </Typography>
+                    <FormProvider {...methods}>
+          <form
+            className={styles.form}
+            onSubmit={handleSubmit(onSubmit)}
+            noValidate
+          >
+            <Row>
+              <Col md={12} xs={24}>
+                <div className={styles.div}>
+                  <label htmlFor="firstName" className={styles.label}>
+                    {t("firstName")}
+                  </label>
+                  <Controller
+                    control={control}
+                    name="firstName"
+                    rules={{ required: "Please enter your first name" }}
+                    render={({ field }) => <input {...field} />}
+                  />
+                  <p className={styles.error}>{errors.firstName?.message}</p>
+                </div>
+              </Col>
                 </Box>
             </Modal>
         </div>
+        </>
     );
 }

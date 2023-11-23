@@ -76,3 +76,258 @@
     width: 50%;
   }
 }
+
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value btn-color: #ff971d;
+@value btn-hover: #e48517;
+@value text-color: #BFBFBF;
+
+.auth {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: text-color;
+}
+
+.home a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white-color;
+  margin: 1rem;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  color: white-color;
+}
+
+.formHolder {
+  background-color: secondary-bg;
+  box-shadow: 0 0.5rem 2rem 0 #00000040;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.formHolder span {
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  width: 95%;
+  padding: 0.6rem auto;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.phoneInput {
+  background-color: secondary-bg !important;
+  padding: 0.6rem !important;
+  font-size: 1.25rem !important;
+  height: 100% !important;
+  margin-left: 0.9rem !important;
+  width: 75% !important;
+}
+
+.drop {
+  margin-right: 1.25rem !important;
+}
+
+.div input {
+  background-color: secondary-bg ;
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  padding: 0.4rem;
+  width: 90%;
+  color: white-color;
+  font-size: 1rem;
+}
+
+.formHolder label {
+  font-size: 1rem;
+  color: text-color;
+  font-weight: 400;
+  padding: 0.4rem 0;
+}
+
+.button {
+  background-color: #ff971d;
+  color: secondary-bg;
+  font-size: 1rem;
+  padding: 0.5rem 3.45rem;
+  border-radius: 4px;
+  border: none;
+  margin: 1.5rem 0;
+  cursor: pointer;
+}
+
+.formHolder button:hover {
+  background-color: btn-hover;
+}
+
+.formHolder p {
+  color: white-color;
+  font-weight: 700;
+}
+
+.formHolder a {
+  color: btn-color;
+  text-decoration: none;
+}
+.formHolder a:hover {
+  color: btn-hover;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1.5rem;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+.error {
+  color: rgb(251, 41, 41) !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  margin-top: 0.3rem;
+  font-size: 0.75rem;
+}
+
+.userExists {
+  color: rgb(251, 41, 41) !important;
+  letter-spacing: 1px;
+}
+
+.created {
+  font-size: 2.5rem;
+  color: btn-color;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .div {
+    align-items: center;
+  }
+
+  .div input {
+    width: 100%;
+  }
+
+  .formHolder span {
+    font-size: 0.9rem;
+  }
+
+  .phoneInput {
+    padding: 0.2rem !important;
+    font-size: 1rem !important;
+    height: 100% !important;
+    margin-left: 2.4rem !important;
+    width: 88% !important;
+  }
+
+  .formHolder input {
+    padding: 0.2rem;
+    font-size: 1rem;
+  }
+
+  .div label {
+    font-size: 0.9rem;
+    padding: 0.375rem 0;
+  }
+
+  .formHolder button {
+    font-size: 0.9rem;
+    padding: 0.4rem 3.5rem;
+  }
+
+  .formHolder p {
+    font-size: 0.9rem;
+  }
+
+  .passwordOptions {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .formHolder {
+    margin: 3rem;
+  }
+
+  .formHolder button {
+    padding: 0.4rem 2.5rem;
+  }
+
+  .formHolder p {
+    font-weight: 400;
+  }
+
+  .phoneInput {
+    padding: 0.2rem !important;
+    font-size: 1rem !important;
+    height: 100% !important;
+    margin-left: 2.4rem !important;
+    width: 83% !important;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .formHolder span {
+    font-size: 0.7rem;
+  }
+
+  .formHolder input {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .div label {
+    font-size: 0.7rem;
+  }
+
+  .formHolder button {
+    font-size: 0.7rem;
+    padding: 0.3rem 2.5rem;
+    font-weight: 600;
+  }
+
+  .formHolder p {
+    font-size: 0.7rem;
+  }
+
+  .passwordOptions {
+    font-size: 0.7rem;
+  }
+  .checkbox label {
+    font-size: 0.7rem;
+  }
+}
+

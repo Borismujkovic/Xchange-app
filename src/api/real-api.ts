@@ -54,11 +54,10 @@ class Api {
   }
 
   public signUp = async (data: IUsers) => {
-    await axios.post(`${apiUrl}/auth/signup`, {
+    await axios.post(`${apiUrl}/api/auth/register`, {
       firstName: data.firstName,
       lastName: data.lastName,
       email: data.email,
-      phoneNo: data.phoneNo,
       password: data.password,
     });
   }
