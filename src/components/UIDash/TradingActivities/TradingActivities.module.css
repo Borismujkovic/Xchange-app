@@ -1,0 +1,199 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value nav-color: #4A4A4F;
+@value btn-color: #FF971D;
+@value btn-hover: #e48517;
+@value text-color: #737373;
+@value border-color: #313135;
+
+.sectionHolder {
+  background-color: secondary-bg;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 2.5rem 0rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.tableHead {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionHolder h2 {
+  color: white-color;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sectionHolder p {
+  color: text-color;
+  margin: 0.5rem 0;
+}
+
+.heading button {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: nav-color;
+  color: white-color;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.heading button:hover {
+  background-color: border-color !important;
+}
+
+.details {
+  margin-top: 1rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid border-color;
+  display: flex;
+  align-items: center;
+}
+
+.details span {
+  font-size: 1rem;
+  color: white-color;
+  font-weight: 400;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.details h6 {
+  font-size: 0.8rem;
+  color: white-color;
+  font-weight: 400;
+}
+
+.positive {
+  color: #00ec42 !important;
+}
+
+.negative {
+  color: #ff2e2e !important;
+}
+
+.neutral {
+  color: white-color;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.3rem;
+}
+
+.name img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.name button {
+  padding: 0.3rem;
+  background-color: btn-color;
+  color: white-color;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  color: white-color;
+  padding: 1.25rem 0;
+  border-top: 1px solid border-color;
+}
+
+ .td {
+  border: none;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+.th {
+  border: none;
+  padding: 8px;
+  text-align: center;
+  color: red;
+  background-color: #f2f2f2;
+}
+
+.name button:hover {
+  background-color: btn-hover;
+}
+
+
+@media (max-width: 1350px) {
+  .sectionHolder {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  .details {
+    flex-wrap: wrap;
+  }
+  .details > * {
+    width: 100%;
+  }
+
+  .details span {
+    font-size: 0.9rem;
+  }
+
+  .sectionHolder h2 {
+    font-size: 1.2rem;
+  }
+
+  .name button {
+    padding: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .heading button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .heading {
+    margin-bottom: 1.25rem;
+  }
+
+  .name button {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .sectionHolder h2 {
+    font-size: 1rem;
+  }
+
+  .details span {
+    font-size: 0.8rem;
+  }
+
+  .heading button {
+    font-size: 0.8rem;
+  }
+
+  .table {
+    font-size: 12px;
+}
+} 

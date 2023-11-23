@@ -1,0 +1,83 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value btn-color: #ff971d;
+@value border-color: #4a4a4f;
+@value btn-hover: #e48517;
+@value text-color: #BFBFBF;
+@value pag-border: #313135;
+@value span-color: #8a92a6;
+
+.auth {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: text-color;
+}
+
+.h1 {
+  font-size: 40px;
+  color: white-color;
+}
+
+.formHolder {
+  background-color: secondary-bg;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  width: 469px;
+  padding: 24px;
+}
+
+.profileImg {
+  background-color: pag-border;
+  border-radius: 50%;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.formHolder span {
+  color: span-color;
+}
+
+.formHolder input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  padding: 10px;
+  width: 100%;
+  color: white-color;
+  font-size: 20px;
+}
+
+.div label {
+  font-size: 16px;
+  color: text-color;
+  font-weight: 400;
+  padding: 6px 0;
+}
+
+.formHolder button {
+  background-color: btn-color;
+  font-size: 16px;
+  padding: 8px 65px;
+  border-radius: 4px;
+  border: none;
+  margin: 24px 0;
+  cursor: pointer;
+}
+
+.formHolder button:hover {
+  background-color: btn-hover;
+}
+
+.formHolder a {
+  color: secondary-bg;
+  text-decoration: none;
+  font-size: 16px;
+}

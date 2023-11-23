@@ -1,0 +1,210 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value btn-color: #ff971d;
+@value btn-hover: #e48517;
+@value text-color: #BFBFBF;
+
+.auth {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: text-color;
+}
+
+.home a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: white-color;
+  margin: 1rem;
+}
+
+.h1 {
+  font-size: 40px;
+  color: white-color;
+}
+
+.formHolder {
+  background-color: secondary-bg;
+  box-shadow: 0px 8px 32px 0px #00000040;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.formHolder span {
+  font-weight: 400;
+  padding: 0.625rem auto;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formHolder input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  padding: 10px;
+  width: 100%;
+  color: white-color;
+  font-size: 20px;
+}
+
+.div label {
+  font-size: 16px;
+  color: text-color;
+  font-weight: 400;
+  padding: 6px 0;
+}
+
+.formHolder button {
+  background-color: btn-color;
+  color: secondary-bg;
+  font-size: 16px;
+  padding: 8px 65px;
+  border-radius: 4px;
+  border: none;
+  margin: 24px 0;
+  cursor: pointer;
+}
+
+.formHolder button:hover {
+  background-color: btn-hover;
+}
+
+.formHolder p {
+  color: white-color;
+  font-weight: 700;
+}
+
+.formHolder a {
+  color: btn-color;
+  text-decoration: none;
+}
+
+.formHolder a:hover {
+  color: btn-hover;
+}
+
+.passwordOptions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.rememberPass {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 0;
+  gap: 24px;
+}
+
+.social img {
+  cursor: pointer;
+}
+
+.error {
+  color: rgb(251, 41, 41) !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.userExists {
+  color: rgb(251, 41, 41) !important;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .formHolder span {
+    font-size: 0.9rem;
+  }
+
+  .formHolder input {
+    padding: 0.625rem;
+    font-size: 1rem;
+  }
+
+  .div label {
+    font-size: 0.9rem;
+    padding: 0.375rem 0;
+  }
+
+  .formHolder button {
+    font-size: 0.9rem;
+    padding: 0.4rem 3.5rem;
+  }
+
+  .formHolder p {
+    font-size: 0.9rem;
+  }
+
+  .passwordOptions {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .formHolder {
+    margin: 3rem;
+  }
+
+  .formHolder button {
+    padding: 0.4rem 2.5rem;
+  }
+
+  .formHolder p {
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .formHolder span {
+    font-size: 0.7rem;
+  }
+
+  .formHolder input {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  .div label {
+    font-size: 0.7rem;
+  }
+
+  .formHolder button {
+    font-size: 0.7rem;
+    padding: 0.3rem 2.5rem;
+    font-weight: 600;
+  }
+
+  .formHolder p {
+    font-size: 0.7rem;
+  }
+
+  .passwordOptions {
+    font-size: 0.7rem;
+  }
+}

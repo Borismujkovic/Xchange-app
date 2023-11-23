@@ -1,0 +1,8 @@
+{
+  "pages": {
+    "*": ["common", "auth", "sidebar", "blog", "statistic", "trade", "exchange", "account"]
+  },
+  "locales": ["en", "de"],
+  "defaultLocale": "en",
+  "defaultNS": "common"
+}

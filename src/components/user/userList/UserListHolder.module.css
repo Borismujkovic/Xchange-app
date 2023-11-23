@@ -1,0 +1,48 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value text-color: #BFBFBF;
+@value pag-border: #313135;
+
+.table {
+  background-color: secondary-bg;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 64px 0;
+}
+
+.userList h2 {
+  color: white-color;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.searchBarHolder {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 38px 0;
+}
+
+.searchBarHolder a {
+  color: pag-border;
+  border: 1px solid pag-border;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.searchBar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: text-color;
+}
+
+.searchBar input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.137);
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+}

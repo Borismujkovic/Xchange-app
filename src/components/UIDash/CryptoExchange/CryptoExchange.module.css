@@ -1,0 +1,156 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value btn-color: #ff971d;
+@value btn-hover: #e48517;
+@value text-color: #BFBFBF;
+@value pag-border: #313135;
+
+.cryptoExchange {
+  text-align: center;
+  color: white-color;
+  padding: 2rem 0;
+}
+
+.exchangeContainer {
+  background-color: secondary-bg;
+  margin: 1rem 5rem;
+  border: 1px solid white-color;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.col {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.col input {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.col select {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.conversion {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.gutterRow {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-weight: 400;
+}
+
+.gutterCol {
+  border-radius: 0.25rem;
+  background-color: secondary-bg;
+  padding: 0.5rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+}
+
+.value {
+  margin: 0.5rem 1rem;
+}
+
+.btn {
+  background-color: btn-color;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem 0 #ff971d26;
+  padding: 0.5rem 0.5rem;
+  color: white-color;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: btn-hover;
+}
+
+.gutterCol p {
+  color: white-color;
+  font-size: 1rem;
+}
+
+.changes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.gutterCol h6 {
+  font-size: 0.8rem;
+  color: text-color;
+}
+
+.gutterCol h5 {
+  font-size: 1.9rem;
+  color: white-color;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.send {
+  background-color: pag-border;
+  padding: 0.26rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  .gutterCol {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .gutterRow {
+    justify-content: start;
+  }
+  .gutterCol {
+    align-items: center;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+
+  .select {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .gutterCol button {
+    margin: 1rem;
+  }
+
+  .btn {
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .gutterCol {
+    justify-content: space-around;
+  }
+}

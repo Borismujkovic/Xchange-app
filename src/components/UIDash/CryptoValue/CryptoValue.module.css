@@ -1,0 +1,167 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value nav-color: #737373;
+@value text-color: #BFBFBF;
+@value btn-color: #ff971d;
+@value btn-hover: #e48517;
+
+.steps{
+  background-color: #202022;
+  border: 1px solid white-color;
+  padding: 2rem;
+  margin: 0 5rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.steps h2{
+  color: white-color;
+}
+
+.step{
+  display: flex;
+  justify-content: space-around;
+  padding: 0 3rem;
+  color: white-color;
+}
+
+.singleStep{
+  text-align: center;
+  border: 1px solid white-color;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 15%;
+}
+
+.button{
+  text-align: center;
+}
+
+.button button{
+  font-size: 0.8rem;
+  background-color: btn-color;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0px 8px 16px rgba(255, 151, 29, 0.15);
+  padding: 0.5rem 1.5rem;
+  color: white-color;
+  cursor: pointer;
+}
+
+.button button:hover{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.singleCrypto {
+  background-color: secondary-bg;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
+  color: text-color;
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+.img {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.shortName {
+  font-weight: 700;
+}
+
+.crypto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: text-color;
+}
+
+.crypto h3 {
+  font-size: 1.5rem;
+}
+
+.singleCrypto h2 {
+  font-size: 33px;
+  margin: 16px 0;
+  font-weight: 600;
+}
+
+.singleCrypto p {
+  font-size: 1.5rem;
+  color: nav-color;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1290px) {
+  .crypto img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .crypto h3 {
+    font-size: 1.2rem;
+  }
+  .singleCrypto h2 {
+    font-size: 1.2rem !important;
+  }
+  .singleCrypto p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .crypto h3 {
+    font-size: 1rem;
+  }
+  .singleCrypto h2 {
+    font-size: 1rem !important;
+  }
+  .singleCrypto p {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .crypto img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .crypto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: text-color;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .crypto h3 {
+    font-size: 0.5rem;
+  }
+
+  .singleCrypto h2 {
+    font-size: 1.3rem;
+    margin: 8px 0;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .singleCrypto p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .singleCrypto {
+    margin: 1.5rem 0.5rem;
+  }
+}

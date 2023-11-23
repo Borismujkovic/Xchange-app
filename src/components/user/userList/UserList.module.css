@@ -1,0 +1,50 @@
+@value main-bg: #19191a;
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value nav-color: #737373;
+@value btn-color: #ff971d;
+@value border-color: #4a4a4f;
+@value btn-hover: #e48517;
+@value text-color: #BFBFBF;
+@value pag-border: #313135;
+@value span-color: #8a92a6;
+
+.headRow {
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 23px !important;
+  color: white-color;
+}
+
+.row {
+  color: white-color;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid white-color;
+  padding: 24px 48px 48px 24px;
+  font-size: 16px;
+  color: text-color;
+}
+
+.paginationHolder {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.paginationHolder p {
+  color: white-color;
+}
+
+.pagination button {
+  color: btn-color;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid pag-border;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: main-bg;
+}

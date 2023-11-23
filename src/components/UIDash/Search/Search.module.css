@@ -1,0 +1,85 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value pag-border: #313135;
+@value btn-color: #ff971d;
+
+.searchBar {
+  padding: 1.5rem;
+  background-color: secondary-bg;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.25);
+  margin: 1.5rem 1.5rem 0 0;
+}
+
+.searchBar input {
+  background-color: pag-border;
+  font-size: 1.4rem;
+  color: white-color;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.searchBar ul {
+  list-style-type: none;
+  padding: 1.5rem 0.6rem;
+}
+
+.searchBar li {
+  margin: 0.6rem 0;
+  font-weight: 700;
+  color: white-color;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.searchBar li:hover {
+  color: btn-color;
+}
+
+.searchBar img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 1290px) {
+  .searchBar input {
+    font-size: 1rem;
+    color: white-color;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .searchBar {
+    padding: 10px;
+  }
+
+  .searchBar input {
+    font-size: 0.7rem;
+    color: white-color;
+    padding: 0.3rem;
+  }
+
+  .searchBar li {
+    margin: 5px 0;
+    font-size: 0.7rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .searchBar {
+    text-align: center;
+  }
+  .img {
+    height: 90%;
+    width: 90%;
+  }
+}

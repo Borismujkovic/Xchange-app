@@ -1,0 +1,10 @@
+{
+  "recent": "Recent Trading Activities",
+  "name": "Name",
+  "price": "Price",
+  "market": "Market Cap",
+  "volume": "Volume",
+  "weekly": "Weekly",
+  "today": "Today",
+  "buy": "BUY"
+}

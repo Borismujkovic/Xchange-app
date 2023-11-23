@@ -1,0 +1,142 @@
+@value main-bg: #19191a;
+@value white-color: #FFFFFF;
+@value btn-color: #ff971d;
+@value pag-border: #313135;
+@value btn-hover: #e48517;
+
+.header {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: main-bg;
+  padding: 0.5rem 0rem 0.5rem 2.4rem;
+  color: white-color;
+  border-bottom: 1px solid #4a4a4f;
+}
+
+.h2 {
+  font-size: 1.6rem;
+}
+
+.h2 a {
+  text-decoration: none;
+  color: white-color;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+}
+
+.profileSection svg {
+  height: 1.4rem;
+  margin-left: 1.8rem;
+  cursor: pointer;
+}
+
+.alertSpan {
+  color: btn-color;
+}
+
+.profileDetails {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 2.5rem;
+  gap: 15px;
+}
+
+.profileDetails img {
+  height: 15%;
+  width: 15%;
+  background-color: pag-border;
+  border-radius: 50%;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.profileDetails img:hover {
+  border: 1px solid white-color;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+.admin {
+  color: btn-color;
+  font-size: 16px;
+}
+
+.lng {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.authButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.authButton {
+  background-color: btn-color;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0.5rem 1rem rgba(255, 151, 29, 0.15);
+  padding: 0.3rem 1rem;
+  color: white-color;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background-color: btn-hover;
+}
+
+@media screen and (max-width: 1290px) {
+  .name {
+    font-size: 1rem;
+  }
+  .authButton {
+    font-size: 0.8rem;
+  }
+  .lng {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 998px) {
+  .header {
+    padding-right: 0.6rem;
+  }
+  .h2 {
+    font-size: 1.4rem;
+  }
+
+  .authButton {
+    font-size: 0.6rem;
+  }
+  .lng {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .authButton {
+    font-size: 0.8rem;
+  }
+
+  .authButtons {
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h2 {
+    font-size: 1.2rem;
+  }
+}

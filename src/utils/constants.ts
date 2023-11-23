@@ -1,0 +1,6 @@
+export const GET_CRYPTO = "CRYPTO_CURRENCIES";
+export const GET_TRANSACTIONS = "USER_TRANSACTIONS";
+export const GET_USER_WALLETS = "WALLETS";
+export const GET_STATISTICS = "CRYPTO_STATISTICS";
+
+export const NUMBER_FORMAT = "0,0.00";

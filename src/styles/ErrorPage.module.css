@@ -1,0 +1,107 @@
+@value secondary-bg: #202022;
+@value white-color: #FFFFFF;
+@value text-color: #BFBFBF;
+@value pag-border: #313135;
+@value p-color: #737373;
+@value btn-color: #FF971D;
+@value btn-hover: #e48517;
+
+.errorPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.error404 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.error500 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.errorHolder {
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+  position: absolute;
+}
+
+.errorHolder div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.errorPage h1 {
+  color: white-color;
+  font-size: 13rem;
+  font-weight: 700 !important;
+}
+
+.errorPage h2 {
+  color: text-color;
+  font-size: 40px;
+  font-weight: 600 !important;
+}
+
+.errorPage p {
+  font-size: 1.5rem;
+  color: p-color;
+  font-weight: 500;
+}
+
+.errorPage button {
+  padding: 0.5rem 1.5rem;
+  background-color: btn-color;
+  color: white-color;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.errorPage button:hover {
+  background-color: btn-hover;
+}
+
+@media screen and (max-width: 1024px) {
+  .error404 {
+    height: 50%;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .errorPage h1 {
+    font-size: 8rem;
+  }
+
+  .errorPage p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  .error404 {
+    height: 30%;
+    width: 30%;
+  }
+  .errorPage h1 {
+    font-size: 4rem;
+  }
+  .errorPage h2 {
+    font-size: 2rem;
+  }
+  .errorPage p {
+    font-size: 0.9rem;
+  }
+}

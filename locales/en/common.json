@@ -1,0 +1,19 @@
+{
+  "logout": "Logout",
+  "policy": "Privacy Policy",
+  "terms": "Terms of Use",
+  "copyright": "Made with ♡ by ",
+  "history": "History",
+  "news": "News",
+  "interest": "Interest",
+  "latest": "Our Latest News",
+  "phone": "Phone No.",
+  "about": {
+    "about": "About",
+    "location": "Location"
+  },
+  "suggestions": "Suggestions",
+  "mutual": "mutual friends",
+  "prev": "prev",
+  "next": "next"
+}

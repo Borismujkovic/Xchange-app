@@ -1,0 +1,19 @@
+{
+  "logout": "Ausloggen",
+  "policy": "Datenschutz-Bestimmungen",
+  "terms": "Nutzungsbedingungen",
+  "copyright": "Gemacht mit ♡ von ",
+  "history": "Geschichte",
+  "news": "Neuigkeiten",
+  "interest": "Interesse",
+  "latest": "Unsere neuesten Nachrichten",
+  "phone": "Telefon",
+  "about": {
+    "about": "Über",
+    "location": "Standort"
+  },
+  "suggestions": "Vorschläge",
+  "mutual": "gemeinsame Freunde",
+  "prev": "vorherige",
+  "next": "nächste"
+}
