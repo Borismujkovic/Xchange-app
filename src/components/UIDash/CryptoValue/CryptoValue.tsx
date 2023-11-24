@@ -7,17 +7,16 @@ const CryptoValue = () => {
       <div className={styled.step}>
         <div className={styled.singleStep}>
           <img src="https://freesvg.org/storage/img/thumb/1539986471.png" alt="" />
-          <h3>1. Create account</h3>
+          <h3>1. Sign In</h3>
           <p>
-            It takes just a few minutes, and all you need is an email address.
+            It takes just a few minutes, and all you need is an email address and password.
           </p>
         </div>
         <div className={styled.singleStep}>
           <img src="https://freesvg.org/storage/img/thumb/credit-card-front.png" alt="" />
           <h3>2. Enter details</h3>
           <p>
-            Add recipient (you'll need their address, bank account/IBAN,
-            swift/BIC) and payment information.
+            Create offer 
           </p>
         </div>
         <div className={styled.singleStep}>

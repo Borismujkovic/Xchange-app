@@ -9,7 +9,7 @@ import { ITransactions } from "../models/transactions";
 import { sortedTokensHandler } from "../utils/utils";
 import { useRouter } from "next/router";
 
-const apiUrl = process.env.API_URL || "";
+const apiUrl = 'http://localhost:7147' || "";
 
 type FetchTransactionsParams = {
   page: number;
@@ -37,7 +37,7 @@ class Api {
   };
 
   public getUserData = async (): Promise<User> => {
-    const { data } = await axios.get(`${apiUrl}/auth/users/me`, {
+    const { data } = await axios.get(`http://localhost:3000/auth/users/me`, {
       headers: {
         Authorization: this.getToken(),
       },
@@ -46,11 +46,11 @@ class Api {
   };
 
   public signIn = async (email: string, password: string) => {
-    const response = await axios.post(`${apiUrl}/auth/signin`, {
+    const response = await axios.post(`${apiUrl}/api/auth`, {
       email,
       password,
     });
-    setCookie("jwt", response.data.accessToken);
+    setCookie("jwt", response.data);
   }
 
   public signUp = async (data: IUsers) => {

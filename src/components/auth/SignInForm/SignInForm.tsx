@@ -65,7 +65,7 @@ const SignInForm = () => {
                     defaultValue=""
                     render={({ field }) => <input {...field} />}
                   />
-                  {/* <p className={styles.error}>{error[0]}</p> */}
+                  <p id="user-email" className={styles.error}>Wrong email</p>
                 </div>
               </Col>
             </Row>
@@ -78,7 +78,7 @@ const SignInForm = () => {
                     name="password"
                     render={({ field }) => <input type="password" {...field} />}
                   />
-                  {/* <p className={styles.error}>{error[1]}</p> */}
+                  <p id="wrong-pass" className={styles.error}>Wrong pass</p>
                 </div>
               </Col>
             </Row>
