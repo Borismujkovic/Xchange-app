@@ -41,7 +41,7 @@ const Header = () => {
         </div>
         {user ? (
           <div className={styles.profileSection}>
-            <Dropdown
+            {/* <Dropdown
               menu={{ items }}
               trigger={["click"]}
               className={styles.lng}
@@ -49,7 +49,7 @@ const Header = () => {
               <a onClick={(e) => e.preventDefault()}>
                 <Space>Lng</Space>
               </a>
-            </Dropdown>
+            </Dropdown> */}
             <div className={styles.profileDetails}>
               <Image src={ProfileIcon} alt="profileIcon" />
               <div>
@@ -66,7 +66,7 @@ const Header = () => {
           </div>
         ) : (
           <div className={styles.authButtons}>
-            <Dropdown
+            {/* <Dropdown
               menu={{ items }}
               trigger={["click"]}
               className={styles.lng}
@@ -74,13 +74,13 @@ const Header = () => {
               <a onClick={(e) => e.preventDefault()}>
                 <Space>Lng</Space>
               </a>
-            </Dropdown>
+            </Dropdown> */}
             <Link href="/auth/sign-in">
               <button className={styles.authButton}>{t("signin")}</button>
             </Link>
-            <Link href="/auth/sign-up">
+            {/* <Link href="/auth/sign-up">
               <button className={styles.authButton}>{t("signup")}</button>
-            </Link>
+            </Link> */}
           </div>
         )}
       </header>

@@ -29,7 +29,7 @@ const SignInForm = () => {
   const onSubmit = async ({ email, password }: SignInFormValues) => {
     try {
       await Api.signIn(email, password);
-      router.push("/");
+      router.push("/homepage");
     } catch (error) {
       if (axios.isAxiosError(error)) {
         if (error.response) {
@@ -45,12 +45,12 @@ const SignInForm = () => {
 
   return (
     <section className={`${styles.auth} ${poppins.className}`}>
-      <div className={styles.home}>
+      {/* <div className={styles.home}>
         <Link href="/">
           <Image src={logo} alt="logo" />
           <h1>Home</h1>
         </Link>
-      </div>
+      </div> */}
       <div className={styles.formHolder}>
         <h1 className={styles.h1}>{t("signin")}</h1>
         <span>Lorem ipsum dolor sit, amer consectetur adipisicing elite.</span>
