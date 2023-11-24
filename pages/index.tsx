@@ -19,27 +19,4 @@ export default function Home() {
    <SignInForm />
     );
   }
-
-  // return (
-  //   <>
-  //     <Head>
-  //       <title>CoineX App</title>
-  //       <link rel="icon" href="/favicon.ico" />
-  //     </Head>
-  //     <main>
-  //       <BaseLayout>
-  //         <Layout>
-  //           <Row gutter={40}>
-  //             <Col span={24}>
-  //               <CryptoExchange />
-  //             </Col>
-  //             <Col span={24}>
-  //               <CryptoValue />
-  //             </Col>
-  //           </Row>
-  //         </Layout>
-  //       </BaseLayout>
-  //     </main>
-  //   </>
-  // );
 }
