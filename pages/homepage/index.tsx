@@ -16,15 +16,15 @@ export default function Home() {
   const { user } = useUser();
   const router = useRouter();
 
-//   useEffect(() => {
-//     if (!user) {
-//       router.push("/");
-//     }
-//   }, [user, router]);
+  // useEffect(() => {
+  //   if (!user) {
+  //     router.push("/");
+  //   }
+  // }, [user, router]);
 
-//   if (!user) {
-//     return null;
-//   }
+  // if (!user) {
+  //   return null;
+  // }
 
   return (
     <>

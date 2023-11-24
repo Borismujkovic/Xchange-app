@@ -17,8 +17,8 @@ const Footer = () => {
       </div>
       <div>
         <p>
-          © 2021 CoineX {t("copyright")}
-          <span>IQONIC Design</span>
+          © 2023 Xchange {t("copyright")}
+          <span>Valentina y muchacos</span>
         </p>
       </div>
     </div>

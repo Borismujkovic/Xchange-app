@@ -7,7 +7,6 @@ import { useRouter } from "next/router";
 import styles from "./SignInForm.module.css";
 import { Row, Col } from "antd";
 import Image from "next/image";
-import logo from "../../../assets/logo.svg";
 
 import { SignInFormValues } from "./SignInForm.types";
 import axios from "axios";
@@ -66,7 +65,7 @@ const SignInForm = () => {
                     defaultValue=""
                     render={({ field }) => <input {...field} />}
                   />
-                  <p className={styles.error}>{error[0]}</p>
+                  {/* <p className={styles.error}>{error[0]}</p> */}
                 </div>
               </Col>
             </Row>
@@ -79,7 +78,7 @@ const SignInForm = () => {
                     name="password"
                     render={({ field }) => <input type="password" {...field} />}
                   />
-                  <p className={styles.error}>{error[1]}</p>
+                  {/* <p className={styles.error}>{error[1]}</p> */}
                 </div>
               </Col>
             </Row>

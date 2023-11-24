@@ -11,9 +11,6 @@ import {
   FileOutlined,
   UnorderedListOutlined,
 } from "@ant-design/icons";
-import Image from "next/image";
-import logo from "../../assets/logo.svg";
-import sidebarImage from "../../assets/sidebar-image.svg";
 import { useUser } from "@/src/store/user";
 import useTranslation from "next-translate/useTranslation";
 import { deleteCookie } from "cookies-next";
@@ -77,7 +74,7 @@ const Sidebar = () => {
           </li>
           <li>
             <Link
-              href={user ? "/user" : "/auth/sign-in"}
+              href="/user"
               className="sidebar__link"
             >
               <div className="sidebar__icon">{<CiMoneyBill />}</div>

@@ -75,7 +75,7 @@ const Header = () => {
                 <Space>Lng</Space>
               </a>
             </Dropdown> */}
-            <Link href="/auth/sign-in">
+            <Link href="/">
               <button className={styles.authButton}>{t("signin")}</button>
             </Link>
             {/* <Link href="/auth/sign-up">

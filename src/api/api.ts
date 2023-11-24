@@ -179,3 +179,6 @@ export const DUMMY_TOKENS: ICrypto[] = [
     },
   },
 ];
+
+
+export const DUMMY_CURRENCIES = ["GBP", "USD", "RUB", "RSD", "EUR"]
