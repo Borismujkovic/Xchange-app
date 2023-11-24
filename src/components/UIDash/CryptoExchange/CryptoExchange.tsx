@@ -22,8 +22,8 @@ const CryptoExchange = () => {
     <div className={styled.cryptoExchange}>
       <Row>
         <Col lg={24}>
-          <h1 id="main-heading">Trusted Global Currency Converter & Money Transfer Solutions</h1>
-          <p>Best source for currency conversion, sending money online and tracking exchange rates</p>
+          <h1 id="main-heading">DataArt currency converter</h1>
+          <p>Best source for currency conversion, sending money online and tracking exchange rates between colleagues</p>
             <div className={styled.exchangeContainer}>
               <h2>Converter</h2>
               <Row>

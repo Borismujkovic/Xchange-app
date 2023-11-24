@@ -17,6 +17,8 @@ const Header = () => {
 
   const { t } = useTranslation("auth");
 
+  console.log(user)
+
   const logout = () => {
     deleteCookie("jwt");
     clearUser();

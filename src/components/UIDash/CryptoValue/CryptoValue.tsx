@@ -16,7 +16,7 @@ const CryptoValue = () => {
           <img src="https://freesvg.org/storage/img/thumb/credit-card-front.png" alt="" />
           <h3>2. Enter details</h3>
           <p>
-            Create offer 
+            Create your offer, how much money do you need and in which currency.
           </p>
         </div>
         <div className={styled.singleStep}>

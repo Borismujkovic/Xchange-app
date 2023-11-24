@@ -181,4 +181,53 @@ export const DUMMY_TOKENS: ICrypto[] = [
 ];
 
 
-export const DUMMY_CURRENCIES = ["GBP", "USD", "RUB", "RSD", "EUR"]
+export const DUMMY_CURRENCIES = ["GBP", "USD", "RUB", "RSD", "EUR"];
+
+export const DUMMY_OFFERS = [{
+  id: 1,
+  user: 'boris@test.com',
+  from: '100 USD',
+  to: '10000 RSD'
+},
+{
+  id: 2,
+  user: 'Valentina@test.com',
+  from: '60 RUB',
+  to: '7180 RSD'
+},
+{
+  id: 3,
+  user: 'Zlatko@test.com',
+  from: '20 EUR',
+  to: '2360 RSD'
+},
+{
+  id: 4,
+  user: 'Marko@test.com',
+  from: '500 USD',
+  to: '4570 EUR'
+},
+{
+  id: 5,
+  user: 'Janjus@test.com',
+  from: '200 EUR',
+  to: '23600 RSD'
+},
+{
+  id: 6,
+  user: 'Milica@test.com',
+  from: '1000 USD',
+  to: '100000 RSD'
+},
+{
+  id: 7,
+  user: 'Maria@test.com',
+  from: '10 EUR',
+  to: '1000 RUB'
+},
+{
+  id: 8,
+  user: 'Agneska@test.com',
+  from: '150 RUB',
+  to: '5200 RSD'
+}]

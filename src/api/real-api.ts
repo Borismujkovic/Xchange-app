@@ -9,7 +9,7 @@ import { ITransactions } from "../models/transactions";
 import { sortedTokensHandler } from "../utils/utils";
 import { useRouter } from "next/router";
 
-const apiUrl = 'http://localhost:7147' || "";
+const apiUrl = 'http://localhost:3000' || "";
 
 type FetchTransactionsParams = {
   page: number;
@@ -46,7 +46,7 @@ class Api {
   };
 
   public signIn = async (email: string, password: string) => {
-    const response = await axios.post(`${apiUrl}/api/auth`, {
+    const response = await axios.post(`${apiUrl}/auth/signin`, {
       email,
       password,
     });
@@ -81,6 +81,11 @@ class Api {
 
   public fetchCrypto = async (): Promise<ICrypto[]> => {
     const res = await axios.get(`${apiUrl}/tokens/`);
+    return res.data;
+  }
+
+  public fetchOffers = async (): Promise<ICrypto[]> => {
+    const res = await axios.get(`${apiUrl}/api/offer`);
     return res.data;
   }
 
